@@ -1,3 +1,4 @@
+import { LoginForm } from "@/components/forms/login-form";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -19,7 +20,9 @@ export default function Login() {
           <CardTitle>Login</CardTitle>
           <CardDescription>Login to your SupportMe account</CardDescription>
         </CardHeader>
-        <CardContent>login form</CardContent>
+        <CardContent>
+          <LoginForm />
+        </CardContent>
         <CardFooter className="justify-between">
           Dont' have an account{" "}
           <Button asChild variant="outline" size="xs">
