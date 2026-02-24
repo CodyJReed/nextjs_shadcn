@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <h1 className="flex gap-2 items-center">
-        <PersonStandingIcon size={50} className="text-pink-500" /> SupportMe
+        <PersonStandingIcon size={50} className="text-red-400" /> SupportMe
       </h1>
       <p>The best dashboard to manage customer support</p>
       <div className="flex gap-2 items-center">
