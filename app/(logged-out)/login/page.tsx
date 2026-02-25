@@ -17,7 +17,9 @@ export default function Login() {
       <PersonStandingIcon size={50} />
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Login</CardTitle>
+          <CardTitle>
+            <h4>Login</h4>
+          </CardTitle>
           <CardDescription>Login to your SupportMe account</CardDescription>
         </CardHeader>
         <CardContent>

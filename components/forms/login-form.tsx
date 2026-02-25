@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 
 const formSchema = z.object({
-  email: z.string(),
+  email: z.email("Invalid email"),
   password: z.string().min(8, "Password must be a minimum of 8 characters"),
 });
 
@@ -55,6 +55,7 @@ export function LoginForm() {
               <FieldLabel htmlFor="form-rhf-email">Email</FieldLabel>
               <Input
                 {...field}
+                type="email"
                 id="form-rhf-email"
                 aria-invalid={fieldState.invalid}
                 placeholder="jon.doe@supportme.com"
@@ -72,6 +73,7 @@ export function LoginForm() {
               <FieldLabel htmlFor="form-rhf-password">Password</FieldLabel>
               <Input
                 {...field}
+                type="password"
                 id="form-rhf-password"
                 aria-invalid={fieldState.invalid}
                 placeholder=""
@@ -83,7 +85,9 @@ export function LoginForm() {
         />
       </FieldGroup>
       <div className="flex justify-center pt-8">
-        <Button type="submit">Submit</Button>
+        <Button className="w-full" type="submit">
+          Submit
+        </Button>
       </div>
     </form>
   );
